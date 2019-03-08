@@ -46,6 +46,7 @@ def get_occupation(data, hometown)
   person
 end
 
+
 def get_average_age_for_season(data, season)
   # code here
   contestant_ages = data[season].collect do |contestant|
