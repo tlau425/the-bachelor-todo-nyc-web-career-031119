@@ -41,7 +41,6 @@ def get_occupation(data, hometown)
         return into_array[:name]
       end 
   end 
-end
 
 
 def get_average_age_for_season(data, season)
