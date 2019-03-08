@@ -35,15 +35,12 @@ end
 
 def get_occupation(data, hometown)
   # code here
-  person = nil
-  data.each do |hash_season, contestants_array|
-    contestants_array.each do |contestant|
-      if contestant["hometown"] == hometown
-        person = contestant["occupation"]
-      end
-    end
-  end
-  person
+  data.each do |season, season_array|
+    season_array.each do |into_array|
+      if into_array[:hometown] == hometown
+        return into_array[:name]
+      end 
+  end 
 end
 
 
